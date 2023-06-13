@@ -1,29 +1,31 @@
 variable "controller_ip" {
   type        = string
   description = "Aviatrix Controller IP or FQDN"
+  default = "4.231.61.51"
 }
 
 variable "username" {
   type        = string
   description = "Aviatrix Controller Username"
-  default     = "admin"
+  default     = "serviceaccount"
 }
 
 variable "password" {
   type        = string
   description = "Aviatrix Controller Password"
+  default = "aviEr1ck45++"
 }
 
 variable "env_name" {
   type        = string
   description = "Name for this environment"
-  default     = "zdenko"
+  default     = "techdays"
 }
 
 variable "azure_account_name" {
   type        = string
   description = "Azure Account Name"
-  default     = "azure-sub-1"
+  default     = "avi-test-controller"
 }
 
 variable "azure_region" {
